@@ -7,8 +7,6 @@ export const Hero = () => {
 
     return (
         <header className="flex flex-col md:flex-row gap-8 items-center md:items-start mb-16 border-b border-eco-border pb-12">
-            {/* Avatar Eco-Friendly : Pas d'image, juste du CSS.
-                Reprend le cercle de ton PDF */}
             <div className="w-28 h-28 bg-white border-4 border-cv-accent/20 rounded-full flex items-center justify-center shrink-0 shadow-sm">
                 <span className="font-bold text-3xl text-cv-accent font-serif">SC</span>
             </div>
@@ -29,7 +27,6 @@ export const Hero = () => {
                     {profile.status}
                 </div>
 
-                {/* Contact Grid */}
                 <div className="flex flex-wrap justify-center md:justify-start gap-x-6 gap-y-3 text-sm text-cv-muted">
                     <a href={`mailto:${profile.email}`} className="flex items-center gap-2 hover:text-cv-accent transition-colors">
                         <Mail size={14} /> {profile.email}
@@ -40,7 +37,7 @@ export const Hero = () => {
                     <a href={`https://github.com/${profile.github}`} target="_blank" rel="noreferrer" className="flex items-center gap-2 hover:text-cv-accent transition-colors">
                         <Github size={14} /> GitHub/{profile.github}
                     </a>
-                    <a href="#" className="flex items-center gap-2 hover:text-cv-accent transition-colors">
+                    <a href="https://www.linkedin.com/in/simon-caillieret-a8996229a/" target="_blank" rel="noreferrer" className="flex items-center gap-2 hover:text-cv-accent transition-colors">
                         <Linkedin size={14} /> {profile.linkedin}
                     </a>
                     <div className="flex items-center gap-2">

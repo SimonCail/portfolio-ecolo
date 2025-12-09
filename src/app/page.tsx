@@ -10,14 +10,6 @@ export default function Home() {
   return (
       <div className="min-h-screen bg-eco-bg text-cv-ink font-sans selection:bg-cv-accent/20 selection:text-cv-ink">
 
-        {/* Bandeau Eco-Index Minimaliste */}
-        <div className="w-full border-b border-eco-border py-1 px-4 text-[10px] flex justify-between items-center text-cv-muted font-mono bg-white/50 backdrop-blur-sm">
-            <span className="flex items-center gap-1">
-               <Leaf size={10} className="text-green-600"/> ECO-DESIGNED
-            </span>
-          <span>{CV_DATA.stats.weight} • 0.01g CO2</span>
-        </div>
-
         <main className="max-w-4xl mx-auto p-6 md:p-12 md:pt-12">
 
           <Hero />
@@ -67,29 +59,17 @@ export default function Home() {
 
                 {/* Centres d'intérêts */}
                 <div className="mt-10 pt-8 border-t border-eco-border">
-                  <h4 className="text-[11px] font-bold text-cv-muted uppercase tracking-wider mb-3">Intérêts</h4>
+                  <h4 className="text-[11px] font-bold text-cv-muted uppercase tracking-wider mb-3">Centres d'intérêts</h4>
                   <p className="text-sm text-cv-ink/80 leading-relaxed">
                     {CV_DATA.hobbies.join(" • ")}
                   </p>
                 </div>
-
-                {/* Note technique discrète */}
-                <div className="mt-12 p-3 rounded bg-green-50 border border-green-100 text-[10px] text-green-800">
-                  <div className="flex items-center gap-1 mb-1 font-bold">
-                    <Server size={10} />
-                    <span>Hébergement Vert</span>
-                  </div>
-                  <p className="opacity-80">
-                    Optimisé pour réduire l'empreinte carbone.
-                  </p>
-                </div>
-
               </div>
             </aside>
           </div>
 
           <footer className="mt-24 pt-8 border-t border-eco-border text-center text-xs text-cv-muted">
-            <p>© 2024 Simon Caillieret — BUT Informatique Lens</p>
+            <p>© 2025 Simon Caillieret — BUT Informatique Lens</p>
           </footer>
         </main>
       </div>

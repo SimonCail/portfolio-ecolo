@@ -1,11 +1,10 @@
-// src/data/cv.ts
-import { Terminal, Code2, Database, Briefcase, GraduationCap, Trophy, Globe } from 'lucide-react';
+import { Terminal, Code2, Database, Globe } from 'lucide-react';
 
 export const CV_DATA = {
     profile: {
         name: "Simon Caillieret",
         role: "Développeur - BUT3 Informatique",
-        status: "Recherche stage (Mars 2026)",
+        status: "Recherche stage (Mars - Juin 2026)",
         location: "Lille / Lens",
         email: "simon.caillieret@gmail.com",
         linkedin: "Simon Caillieret",
@@ -13,59 +12,81 @@ export const CV_DATA = {
         phone: "06 11 13 45 66",
         details: ["Permis B", "Véhiculé"]
     },
-    stats: {
-        weight: "24kb", // Estimation après build
-        score: "A+"
-    },
     skills: [
         {
             category: "Backend & Langages",
             icon: Terminal,
-            items: ["Java", "Spring", "Python", "PHP (Laravel)", "Node.js", "C"]
+            items: ["Java", "Spring", "Python", "PHP (Laravel)", "Node.js"]
         },
         {
             category: "Frontend & Web",
             icon: Globe,
-            items: ["React", "Vue.js", "HTML5", "CSS3", "Tailwind", "Next.js"]
+            items: ["React", "Vue.js", "HTML/CSS", "Tailwind", "Next.js", "JavaScript/TypeScript"]
         },
         {
             category: "Data & DevOps",
             icon: Database,
             items: ["SQL", "MongoDB", "Docker", "Git/CI/CD", "Linux", "Deep Learning"]
+        },
+        {
+            category: "Outils & Méthodes",
+            icon: Code2,
+            items: ["Agile", "Travail d'équipe", "Insomnia", "Bruno", "Figma", "Adobe Suite", "VS Code", "Suite JetBrains"]
         }
     ],
     experience: [
         {
             id: 1,
-            role: "Stagiaire Développeur",
-            company: "Grow Your Business",
-            period: "Avril - Juin 2025",
-            description: "Développement d'une application mobile en Vue.js pour audits énergétiques (ERESE). Réalisation de sites vitrines WordPress. Application de la méthode Agile.",
-            tags: ["Vue.js", "WordPress", "Agile"]
+            role: "Stages en Entreprise",
+            company: "Expériences Professionnelles",
+            period: "2023 - 2025",
+            description: "Immersion en entreprise et application des compétences techniques en situation réelle.",
+            tags: [],
+            subProjects: [
+                {
+                    title: "Stage Développeur - Grow Your Business (Arras - 2025)",
+                    description: "Avril à Juin. Développement d'une application mobile en Vue.js pour audits énergétiques (ERESE). Réalisation de sites WordPress et méthode Agile.",
+                    tags: ["Vue.js", "WordPress", "Agile"]
+                },
+                {
+                    title: "Stage Infographiste - FDB Décoration (Méricourt - 2023)",
+                    description: "Avril à Juin. Conception de visuels commerciaux et supports de communication. Utilisation de la suite Adobe pour la retouche et la mise en page.",
+                    tags: ["Adobe Suite", "Design", "Communication"]
+                }
+            ]
         },
         {
             id: 2,
-            role: "Projet Universitaire",
-            company: "Bomberman",
-            period: "Octobre 2024",
-            description: "Conception complète d'un jeu en Java. Architecture orientée objet, gestion d'événements complexes et interfaces graphiques Swing/JavaFX.",
-            tags: ["Java", "POO", "Swing"]
+            role: "Projets",
+            company: "IUT Lens / Projets Personnels",
+            period: "2024",
+            description: "Réalisation de projets techniques mettant en œuvre l'architecture logicielle et le travail d'équipe.",
+            tags: [],
+            subProjects: [
+                {
+                    title: "Bomberman",
+                    description: "Conception complète d'un jeu Bomberman en équipe de 4. Architecture orientée objet et interfaces graphiques JavaFX.",
+                    tags: ["Java", "POO", "JavaFX", "Agile", "Travail d'équipe"]
+                },
+                {
+                    title: "Marathon du Web",
+                    description: "Création d'un site de carnet de voyages en 36h à 8 avec 4 personnes spécialisées dans le back-end et 4 personnes spécialisées dans le front-end.",
+                    tags: ["PHP", "HTML/CSS", "JavaScript/TypeScript", "Agile", "Travail d'équipe"]
+                },
+                {
+                    title: "Location-MaskCar",
+                    description: "Application de gestion de location de véhicules. Gestion des clients, des réservations et facturation. Interface administration et client.",
+                    tags: ["JavaScript/TypeScript", "HTML/CSS", "Agile", "Travail d'équipe"]
+                }
+            ]
         },
         {
             id: 3,
-            role: "Challenge Technique",
-            company: "Marathon du Web",
-            period: "Décembre 2024",
-            description: "Hackathon de 48h. Création d'un site complet avec focus Backend intensif.",
-            tags: ["Hackathon", "Backend", "Teamwork"]
-        },
-        {
-            id: 4,
             role: "Jobs Étudiants",
             company: "Divers",
             period: "2023 - 2024",
-            description: "Infographiste, Agent de tri, Employé technique. Développement de la rigueur et du travail d'équipe.",
-            tags: ["Polyvalence"]
+            description: "Agent de tri, Employé technique. ",
+            tags: ["Travail d'équipe"]
         }
     ],
     education: [
@@ -79,7 +100,7 @@ export const CV_DATA = {
             degree: "Baccalauréat Général",
             school: "Lycée Saint-Paul Lens",
             year: "2022",
-            details: "Mention Bien. Spécialités Maths - NSI."
+            details: "Mention Bien. Spécialités Mathématiques - Informatiques."
         }
     ],
     hobbies: ["Football", "Musculation", "Musique", "Voyages"]
