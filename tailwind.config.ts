@@ -1,29 +1,27 @@
 import type { Config } from "tailwindcss";
 
 const config: Config = {
+    // ICI : On ajoute des chemins plus larges pour être sûr de trouver tes fichiers
     content: [
-        "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-        "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-        "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+        "./src/components/**/*.{js,ts,jsx,tsx}",
+        "./src/app/**/*.{js,ts,jsx,tsx}",
+        "./src/data/**/*.ts",
     ],
     theme: {
         extend: {
             colors: {
-                // Nos couleurs Eco / CV personnalisées
                 eco: {
-                    bg: "#121212",      // Noir doux (OLED friendly)
-                    card: "#1E1E1E",    // Gris anthracite
-                    border: "#333333",  // Bordures discrètes
+                    bg: "#F9F9F7",      // Blanc cassé papier
+                    card: "#FFFFFF",    // Blanc pur
+                    border: "#E5E5E0",  // Bordure grise
                 },
                 cv: {
-                    paper: "#E8E6D9",   // Blanc cassé / Crème
-                    muted: "#9CA3AF",   // Gris moyen
-                    accent: "#D4AF37",  // Doré / Beige (Ta couleur d'accentuation)
+                    ink: "#1F1F1F",     // Gris anthracite (Texte)
+                    muted: "#666666",   // Gris moyen
+                    accent: "#B08D55",  // Doré
                 }
             },
             fontFamily: {
-                // LA CLÉ DU SUCCÈS : On force les polices système.
-                // Tailwind utilisera la première dispo sur l'ordi du visiteur.
                 sans: [
                     "-apple-system",
                     "BlinkMacSystemFont",

@@ -1,24 +1,42 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-:root {
-  /* Mode sombre "Eco" par défaut */
-  --background: #121212;
-  --foreground: #E8E6D9;
+@theme {
+  /* --- Couleurs migrées de tailwind.config.ts --- */
+
+  /* Thème Eco (Papier & Naturel) */
+  --color-eco-bg: #F9F9F7;
+  --color-eco-card: #FFFFFF;
+  --color-eco-border: #E5E5E0;
+
+  /* Thème CV (Typographie & Accent) */
+  --color-cv-ink: #1F1F1F;
+  --color-cv-muted: #666666;
+  --color-cv-accent: #B08D55;
+
+  /* --- Polices connectées à layout.tsx --- */
+  /* Ajout de valeurs par défaut pour éviter les erreurs */
+  --font-geist-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-geist-mono: "Fira Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  /* Lissage de police pour une meilleure lisibilité sur fond sombre */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-/* Utilitaires personnalisés si besoin */
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+/* --- Configuration du Container (Centré par défaut) --- */
+@utility container {
+  margin-inline: auto;
+  padding-inline: 1.5rem;
+  @media (min-width: 640px) {
+    padding-inline: 2rem;
   }
+  @media (min-width: 1024px) {
+    padding-inline: 3rem;
+  }
+}
+
+/* --- Styles de base --- */
+body {
+  background-color: var(--color-eco-bg);
+  color: var(--color-cv-ink);
+  font-family: var(--font-sans);
 }

@@ -6,31 +6,31 @@ export const Hero = () => {
     const { profile } = CV_DATA;
 
     return (
-        <header className="flex flex-col md:flex-row gap-8 items-start mb-12">
-            {/* Avatar CSS Pur (Poids : ~100 octets vs 50kb pour une image) */}
-            <div className="w-24 h-24 bg-eco-card border-2 border-cv-accent rounded-full flex items-center justify-center shrink-0 shadow-lg shadow-cv-accent/5">
-                <span className="font-bold text-3xl text-cv-paper">SC</span>
+        <header className="flex flex-col md:flex-row gap-8 items-center md:items-start mb-16 border-b border-eco-border pb-12">
+            {/* Avatar Eco-Friendly : Pas d'image, juste du CSS.
+                Reprend le cercle de ton PDF */}
+            <div className="w-28 h-28 bg-white border-4 border-cv-accent/20 rounded-full flex items-center justify-center shrink-0 shadow-sm">
+                <span className="font-bold text-3xl text-cv-accent font-serif">SC</span>
             </div>
 
-            <div className="flex-1">
-                <h1 className="text-4xl md:text-5xl font-bold text-cv-paper tracking-tight mb-2">
+            <div className="flex-1 text-center md:text-left">
+                <h1 className="text-4xl md:text-5xl font-bold text-cv-ink tracking-tight mb-2">
                     {profile.name}
                 </h1>
                 <h2 className="text-xl text-cv-accent font-medium mb-4 font-mono">
                     {profile.role}
                 </h2>
 
-                {/* Statut avec animation CSS native (très léger) */}
-                <div className="inline-flex items-center gap-2 px-3 py-1 rounded bg-eco-card border border-eco-border text-xs text-cv-muted mb-6">
-          <span className="relative flex h-2 w-2">
-            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
-            <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
-          </span>
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-green-50 border border-green-100 text-xs text-green-700 mb-6">
+                    <span className="relative flex h-2 w-2">
+                        <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                        <span className="relative inline-flex rounded-full h-2 w-2 bg-green-600"></span>
+                    </span>
                     {profile.status}
                 </div>
 
-                {/* Liens de contact */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2 text-sm text-cv-muted">
+                {/* Contact Grid */}
+                <div className="flex flex-wrap justify-center md:justify-start gap-x-6 gap-y-3 text-sm text-cv-muted">
                     <a href={`mailto:${profile.email}`} className="flex items-center gap-2 hover:text-cv-accent transition-colors">
                         <Mail size={14} /> {profile.email}
                     </a>

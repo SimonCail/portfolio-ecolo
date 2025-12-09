@@ -7,8 +7,8 @@ interface Props {
 }
 
 export const SectionTitle = ({ title, icon: Icon }: Props) => (
-    <h2 className="flex items-center gap-3 text-lg font-bold text-cv-paper mb-6 border-b border-eco-border pb-2 mt-8">
+    <h2 className="flex items-center gap-3 text-lg font-bold text-cv-ink mb-6 pb-2 border-b-2 border-eco-border">
         {Icon && <Icon size={20} className="text-cv-accent" />}
-        <span className="tracking-wide uppercase">{title}</span>
+        <span className="tracking-wide uppercase text-sm md:text-base">{title}</span>
     </h2>
 );
