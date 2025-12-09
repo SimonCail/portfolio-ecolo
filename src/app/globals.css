@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Mode sombre "Eco" par défaut */
+  --background: #121212;
+  --foreground: #E8E6D9;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  /* Lissage de police pour une meilleure lisibilité sur fond sombre */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Utilitaires personnalisés si besoin */
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
