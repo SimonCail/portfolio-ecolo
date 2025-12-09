@@ -1,7 +1,7 @@
 import { Terminal, Code2, Database, Globe } from 'lucide-react';
 
 export const CV_DATA = {
-    profile: {
+    profil: {
         name: "Simon Caillieret",
         role: "Développeur - BUT3 Informatique",
         status: "Recherche stage (Mars - Juin 2026)",

@@ -9,17 +9,11 @@ import { Code2, GraduationCap, Leaf, Server } from 'lucide-react';
 export default function Home() {
   return (
       <div className="min-h-screen bg-eco-bg text-cv-ink font-sans selection:bg-cv-accent/20 selection:text-cv-ink">
-
         <main className="max-w-4xl mx-auto p-6 md:p-12 md:pt-12">
-
           <Hero />
-
           <div className="grid grid-cols-1 lg:grid-cols-[1fr_260px] gap-12">
-
-            {/* Colonne Principale (Gauche sur Desktop) */}
             <div className="space-y-12">
               <Experience />
-
               <section>
                 <SectionTitle title="Formation" icon={GraduationCap} />
                 <div className="grid gap-4">
@@ -36,12 +30,9 @@ export default function Home() {
                 </div>
               </section>
             </div>
-
-            {/* Sidebar (Compétences & Infos) */}
             <aside className="lg:block space-y-10">
               <div className="sticky top-8">
                 <SectionTitle title="Compétences" icon={Code2} />
-
                 <div className="space-y-8">
                   {CV_DATA.skills.map((skillGroup, idx) => (
                       <div key={idx}>
@@ -56,8 +47,6 @@ export default function Home() {
                       </div>
                   ))}
                 </div>
-
-                {/* Centres d'intérêts */}
                 <div className="mt-10 pt-8 border-t border-eco-border">
                   <h4 className="text-[11px] font-bold text-cv-muted uppercase tracking-wider mb-3">Centres d'intérêts</h4>
                   <p className="text-sm text-cv-ink/80 leading-relaxed">
@@ -67,7 +56,6 @@ export default function Home() {
               </div>
             </aside>
           </div>
-
           <footer className="mt-24 pt-8 border-t border-eco-border text-center text-xs text-cv-muted">
             <p>© 2025 Simon Caillieret — BUT Informatique Lens</p>
           </footer>
