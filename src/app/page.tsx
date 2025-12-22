@@ -17,7 +17,6 @@ export default function Home() {
 
               <section>
                 <SectionTitle title="Formation" icon={GraduationCap} />
-                {/* Passage en 2 colonnes pour la formation pour occuper l'espace */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   {CV_DATA.education.map((edu, idx) => (
                       <div key={idx} className="bg-white p-6 rounded-xl border border-eco-border shadow-sm hover:shadow-md transition-all">

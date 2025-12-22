@@ -1,26 +1,25 @@
 @import "tailwindcss";
 
 @theme {
-  --color-eco-bg: #F9F9F7;
-  --color-eco-card: #FFFFFF;
-  --color-eco-border: #E5E5E0;
+  --color-eco-bg: #F3EFE9;
+  --color-eco-card: #FAF9F6;
+  --color-eco-border: #E8E2D9;
 
   --color-cv-ink: #1F1F1F;
   --color-cv-muted: #666666;
   --color-cv-accent: #B08D55;
 
-  /* --- Polices --- */
   --font-geist-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
   --font-geist-mono: "Fira Mono", ui-monospace, SFMono-Regular, monospace;
-
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
 @utility project-card {
-  @apply relative pl-4 border-l-2 border-eco-border transition-all duration-200 py-3 rounded-r-md;
+  @apply relative pl-4 border-l-2 border-eco-border transition-all duration-300 py-3 rounded-r-md;
   &:hover {
-    @apply border-cv-accent bg-cv-accent/[0.03] ;
+    @apply border-cv-accent bg-white shadow-sm;
+    transform: translateX(4px);
   }
 }
 

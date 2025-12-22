@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "../app/globals.css"
 
 export const metadata: Metadata = {
-    title: "Simon Caillieret | CV Éco-conçu",
-    description: "CV de Simon Caillieret, Développeur BUT Informatique. Site éco-responsable.",
+    title: "Simon Caillieret | CV",
+    description: "CV de Simon Caillieret.",
 };
 
 export default function RootLayout({
@@ -13,10 +13,7 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="fr" className="antialiased">
-        {/* Pas de className sur le body car nous avons défini
-        'sans' comme police par défaut dans tailwind.config.ts
-      */}
-        <body className="bg-eco-bg text-cv-paper min-h-screen">
+        <body className="bg-eco-bg text-cv-ink min-h-screen">
         {children}
         </body>
         </html>
