@@ -21,7 +21,7 @@ export const CV_DATA = {
         {
             category: "Frontend & Web",
             icon: Globe,
-            items: ["React", "Vue.js", "HTML/CSS", "Tailwind", "Next.js", "JavaScript/TypeScript"]
+            items: ["React","React Native", "Vue.js", "HTML/CSS", "Tailwind", "Next.js", "JavaScript/TypeScript"]
         },
         {
             category: "Data & DevOps",
@@ -71,7 +71,7 @@ export const CV_DATA = {
                 },
                 {
                     title: "Marathon du Web",
-                    description: "Création d'un site de carnet de voyages en 36h à 8 personnes.",
+                    description: "Création d'un site de carnet de voyages en 36h à 8 avec 4 personnes spécialisées dans le back-end et 4 personnes spécialisées dans le front-end.",
                     tags: ["PHP", "HTML/CSS", "JavaScript/TypeScript", "Agile"],
                     link: "https://github.com/SimonCail/MarathonWeb"
                 },
@@ -80,6 +80,12 @@ export const CV_DATA = {
                     description: "Application de gestion de location de véhicules. Gestion des clients, des réservations et facturation.",
                     tags: ["JavaScript/TypeScript", "HTML/CSS", "Agile"],
                     link: "https://github.com/SimonCail/Location-MaskCar"
+                },
+                {
+                    title: "Gestion Délégation",
+                    description: "Application mobile développée avec Expo et React Native pour enregistrer, suivre et stocker localement ses heures de délégations. Elle gère automatiquement le calcul des quotas et des reports mensuels. (En cours de création)",
+                    tags: ["React Native", "JavaScript/TypeScript"],
+                    link: "https://github.com/SimonCail/gestion-delegation"
                 }
             ]
         },
