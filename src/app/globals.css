@@ -1,20 +1,15 @@
 @import "tailwindcss";
 
 @theme {
-  /* --- Couleurs migrées de tailwind.config.ts --- */
-
-  /* Thème Eco (Papier & Naturel) */
   --color-eco-bg: #F9F9F7;
   --color-eco-card: #FFFFFF;
   --color-eco-border: #E5E5E0;
 
-  /* Thème CV (Typographie & Accent) */
   --color-cv-ink: #1F1F1F;
   --color-cv-muted: #666666;
   --color-cv-accent: #B08D55;
 
-  /* --- Polices connectées à layout.tsx --- */
-  /* Ajout de valeurs par défaut pour éviter les erreurs */
+  /* --- Polices --- */
   --font-geist-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
   --font-geist-mono: "Fira Mono", ui-monospace, SFMono-Regular, monospace;
 
@@ -22,19 +17,28 @@
   --font-mono: var(--font-geist-mono);
 }
 
-/* --- Configuration du Container (Centré par défaut) --- */
+@utility project-card {
+  @apply relative pl-4 border-l-2 border-eco-border transition-all duration-200 py-3 rounded-r-md;
+  &:hover {
+    @apply border-cv-accent bg-cv-accent/[0.03] ;
+  }
+}
+
+@utility project-title {
+  @apply text-sm font-bold text-cv-ink transition-colors;
+  .group\/link:hover & {
+    @apply text-cv-accent;
+  }
+}
+
 @utility container {
   margin-inline: auto;
   padding-inline: 1.5rem;
   @media (min-width: 640px) {
     padding-inline: 2rem;
   }
-  @media (min-width: 1024px) {
-    padding-inline: 3rem;
-  }
 }
 
-/* --- Styles de base --- */
 body {
   background-color: var(--color-eco-bg);
   color: var(--color-cv-ink);

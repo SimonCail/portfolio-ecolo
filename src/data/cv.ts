@@ -3,7 +3,7 @@ import { Terminal, Code2, Database, Globe } from 'lucide-react';
 export const CV_DATA = {
     profil: {
         name: "Simon Caillieret",
-        role: "Développeur - BUT3 Informatique",
+        role: "Développeur Full-Stack - BUT3 Informatique",
         status: "Recherche stage (Mars - Juin 2026)",
         location: "Lille / Lens",
         email: "simon.caillieret@gmail.com",
@@ -66,17 +66,20 @@ export const CV_DATA = {
                 {
                     title: "Bomberman",
                     description: "Conception complète d'un jeu Bomberman en équipe de 4. Architecture orientée objet et interfaces graphiques JavaFX.",
-                    tags: ["Java", "POO", "JavaFX", "Agile", "Travail d'équipe"]
+                    tags: ["Java", "POO", "JavaFX", "Agile", "Travail d'équipe"],
+                    link: "https://github.com/SimonCail/Bomberman"
                 },
                 {
                     title: "Marathon du Web",
-                    description: "Création d'un site de carnet de voyages en 36h à 8 avec 4 personnes spécialisées dans le back-end et 4 personnes spécialisées dans le front-end.",
-                    tags: ["PHP", "HTML/CSS", "JavaScript/TypeScript", "Agile", "Travail d'équipe"]
+                    description: "Création d'un site de carnet de voyages en 36h à 8 personnes.",
+                    tags: ["PHP", "HTML/CSS", "JavaScript/TypeScript", "Agile"],
+                    link: "https://github.com/SimonCail/MarathonWeb"
                 },
                 {
                     title: "Location-MaskCar",
-                    description: "Application de gestion de location de véhicules. Gestion des clients, des réservations et facturation. Interface administration et client.",
-                    tags: ["JavaScript/TypeScript", "HTML/CSS", "Agile", "Travail d'équipe"]
+                    description: "Application de gestion de location de véhicules. Gestion des clients, des réservations et facturation.",
+                    tags: ["JavaScript/TypeScript", "HTML/CSS", "Agile"],
+                    link: "https://github.com/SimonCail/Location-MaskCar"
                 }
             ]
         },
