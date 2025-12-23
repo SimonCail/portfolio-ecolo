@@ -21,7 +21,7 @@ export const CV_DATA = {
         {
             category: "Frontend & Web",
             icon: Globe,
-            items: ["React","React Native", "Vue.js", "HTML/CSS", "Tailwind", "Next.js", "JavaScript/TypeScript"]
+            items: ["React","React Native", "Vue.js", "HTML/CSS", "Tailwind", "Next.js", "JavaScript/TypeScript", "JavaFX"]
         },
         {
             category: "Data & DevOps",
@@ -31,7 +31,7 @@ export const CV_DATA = {
         {
             category: "Outils & Méthodes",
             icon: Code2,
-            items: ["Agile", "Travail d'équipe", "Insomnia", "Bruno", "Figma", "Adobe Suite", "VS Code", "Suite JetBrains"]
+            items: ["Agile", "Travail d'équipe", "Insomnia", "Bruno", "Figma", "Adobe Suite", "VS Code", "Suite JetBrains", "WordPress", "Communication"]
         }
     ],
     experience: [
@@ -51,7 +51,7 @@ export const CV_DATA = {
                 {
                     title: "Stage Infographiste - FDB Décoration (Méricourt - 2023)",
                     description: "Avril à Juin. Conception de visuels commerciaux et supports de communication. Utilisation de la suite Adobe pour la retouche et la mise en page.",
-                    tags: ["Adobe Suite", "Design", "Communication"]
+                    tags: ["Adobe Suite", "Communication"]
                 }
             ]
         },
@@ -66,7 +66,7 @@ export const CV_DATA = {
                 {
                     title: "Bomberman",
                     description: "Conception complète d'un jeu Bomberman en équipe de 4. Architecture orientée objet et interfaces graphiques JavaFX.",
-                    tags: ["Java", "POO", "JavaFX", "Agile", "Travail d'équipe"],
+                    tags: ["Java", "JavaFX", "Agile", "Travail d'équipe"],
                     link: "https://github.com/SimonCail/Bomberman"
                 },
                 {
