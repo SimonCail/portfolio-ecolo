@@ -8,7 +8,7 @@ export const Hero = () => {
     return (
         <header className="relative flex flex-col md:flex-row gap-12 items-center md:items-start mb-20 pb-16 border-b border-eco-border/60">
             <a
-                href="/cv Simon Caillieret stage.pdf"
+                href="/cv Simon.pdf.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="md:absolute md:top-0 md:right-0 inline-flex items-center gap-2 px-5 py-2.5 bg-white border border-eco-border rounded-xl text-[11px] font-bold uppercase tracking-widest text-cv-muted hover:border-cv-accent hover:text-cv-accent hover:shadow-sm transition-all duration-300 mb-8 md:mb-0"

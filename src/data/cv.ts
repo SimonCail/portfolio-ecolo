@@ -37,21 +37,31 @@ export const CV_DATA = {
     experience: [
         {
             id: 1,
-            role: "Stages en Entreprise",
-            company: "Expériences Professionnelles",
+            role: "Expériences Professionnelles",
+            company: "Stages & Jobs Étudiants",
             period: "2023 - 2025",
-            description: "Immersion en entreprise et application des compétences techniques en situation réelle.",
-            tags: [],
+            description: "Parcours mêlant immersions techniques en entreprise et expériences opérationnelles en logistique.",
+            tags: ["Rigueur", "Travail d'équipe", "Adaptabilité"],
             subProjects: [
                 {
                     title: "Stage Développeur - Grow Your Business (Arras - 2025)",
-                    description: "Avril à Juin. Développement d'une application mobile en Vue.js pour audits énergétiques (ERESE). Réalisation de sites WordPress et méthode Agile.",
+                    description: "Avril à Juin. Développement d'une application mobile en Vue.js pour audits (ERESE). Réalisation de sites WordPress et méthode Agile.",
                     tags: ["Vue.js", "WordPress", "Agile"]
                 },
                 {
+                    title: "Agent de tri - Viapost (Douvrin - 2023)",
+                    description: "Août. Tri de colis et gestion logistique sur plateforme de tri automatisée.",
+                    tags: []
+                },
+                {
                     title: "Stage Infographiste - FDB Décoration (Méricourt - 2023)",
-                    description: "Avril à Juin. Conception de visuels commerciaux et supports de communication. Utilisation de la suite Adobe pour la retouche et la mise en page.",
+                    description: "Avril à Juin. Conception de visuels commerciaux et supports de communication. Utilisation de la suite Adobe.",
                     tags: ["Adobe Suite", "Communication"]
+                },
+                {
+                    title: "Préparateur de commandes - Carrefour (Vendin-le-Vieil - 2023)",
+                    description: "Février à Avril. Préparation de commandes et gestion rigoureuse de la chaîne logistique.",
+                    tags: []
                 }
             ]
         },
