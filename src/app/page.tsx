@@ -63,7 +63,7 @@ export default function Home() {
           </div>
 
           <footer className="mt-32 pt-12 border-t border-eco-border text-center text-[10px] tracking-widest uppercase text-cv-muted">
-            <p>© 2025 Simon Caillieret — BUT Informatique Lens</p>
+            <p>2025 Simon Caillieret — BUT Informatique Lens</p>
           </footer>
         </main>
       </div>
